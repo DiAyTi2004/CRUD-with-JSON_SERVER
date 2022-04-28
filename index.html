@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD with Json Server</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./Grid_System.css">
+<link rel="stylesheet" href="./style.css">
+<body>
+    <div id="main">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-8 m-8 c-12">
+                    <h1>Danh sách ô tô:</h1>
+                    <ul class="carsList">
+                        
+                    </ul>
+                </div>
+                <div class="col l-4 m-4 c-12">
+                    <h1>Thêm xe: </h1>
+                    <div class="create">
+                        <div class="create__group">
+                            <label for="name">Tên xe:</label>
+                            <input type="text" class="input__create-car input__carName" name="name">
+                        </div>
+                        <div class="create__group">
+                            <label for="description">Mô tả:</label>
+                            <input type="text" class="input__create-car input__carDescription" name="description">
+                        </div>
+                    </div>
+                    <button id="createCar">Tạo xe mới</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal__wrapper modal__edit">
+        <div class="modal">
+            <div class="modal__heading">
+                <h2 class="modal__tit">Chỉnh sửa:</h3>
+                <div class="modal__close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="modal__group">
+                <label for="" class="modal__name">Tên:</label>
+                <input type="text" class="modal__input">
+            </div>
+            <div class="modal__group">
+                <label for="" class="modal__name">Mô tả:</label>
+                <input type="text" class="modal__input">
+            </div>
+            <button class="modal__confirm">Cập nhật</button>
+        </div>
+    </div> -->
+    <!-- <div class="modal__wrapper modal__delete">
+        <div class="modal">
+            <h2 class="modal__content">
+                Bạn có chắc xóa phần tử này chứ?
+            </h2>
+            <div class="modal__body">
+                <h3 class="modal__infor modal__name">
+                    sidfnjsdfn
+                </h3>
+                <h5 class="modal__infor modal__des">
+                    sidfnjsdfn
+                </h5>
+            </div>
+            <div class="modal__btn-list">
+                <button class="modal__confirm">Xóa</button>
+                <button class="modal__confirm modal__cancel">Hủy</button>
+            </div>
+        </div>
+    </div> -->
+    <script src="./app.js"></script>
+</body>
+</html>

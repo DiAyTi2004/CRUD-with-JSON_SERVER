@@ -1,0 +1,189 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+#main {
+    margin-top: 24px;
+}
+
+.carsList {
+    margin-top: 24px;
+}
+
+.car {
+    border: 2px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car__options {
+    display: flex;
+}
+
+.car__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 4px;
+    margin: 0px 2px;
+}
+
+.car__btn i {
+    margin-right: 4px;
+}
+
+.car__btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.car+.car {
+    margin-top: 12px;
+}
+
+.car__body {
+    padding: 4px;
+    margin: 0px 12px;
+}
+
+.car__name {
+    font-size: 20px;
+}
+
+.car__description {
+    font-size: 14px;
+}
+
+.create {
+    margin-top: 24px;
+    padding: 12px 12px 0px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.create__group {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input__create-car {
+    width: 80%;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+#createCar {
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+}
+
+#createCar:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Modal */
+.modal__wrapper {
+    /* display: none !important; */
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal {
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: black;
+    padding: 12px 24px;
+    position: relative;
+    z-index: 9;
+    transition: all linear 0.2s;
+    animation: scrollIn ease-in 0.2s;
+}
+@keyframes scrollIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modal__heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal__close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 8px;
+    background-color: white;
+
+}
+.modal__close i{
+    font-size: 20px;
+    color: black;
+}
+.modal__close:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: red;
+}
+.modal__close:hover i{
+    color: white;
+}
+.modal__group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px auto;
+}
+.modal__input{
+    padding: 4px 12px;
+    border-radius: 4px;
+    width: 70%;
+}
+.modal__confirm{
+    margin-top: 8px;
+    padding: 4px 24px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 18px;
+}
+.modal__confirm:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.modal__btn-list{
+    display: flex;
+}
+.modal__infor{
+    margin: 4px auto;
+}
